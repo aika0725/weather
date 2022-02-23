@@ -5,4 +5,8 @@
     width: 600px;
     height: 200px;
     flex-direction: column;
+    border: tomato;
+    border-style: double;
+    margin-top: 50px;
+    padding: 10px;
 }
