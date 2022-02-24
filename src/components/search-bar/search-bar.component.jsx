@@ -1,19 +1,24 @@
 import React from "react";
 
-const SearchBar = ({placeholder, setCity})=>{
-    const search=(e)=> {
-         if(e.key === 'Enter') {
-             setCity(e.target.value)
-         }     
-    }
+const SearchBar = (props) => {
 
-    return(
-    <input
-    className="search"
-    type="search"
-    placeholder= {placeholder}
-    onKeyDown={search}
-    />
-)}
+
+    // const search = (e) => {
+    //     if (e.key === 'Enter') {
+    //         props.setLocation(e.target.value)
+    //     }
+    // }
+
+    return (
+        <div className="search">
+            <input
+                className="searchBar"
+                type="search"
+                 placeholder={props.placeholder}
+                // onKeyDown={search}
+            />
+        </div>
+    )
+}
 
 export default SearchBar

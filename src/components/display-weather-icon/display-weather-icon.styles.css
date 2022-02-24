@@ -1,0 +1,29 @@
+.icon-weather-disply {
+    display: grid;
+    margin-right: 16px; 
+
+    grid-template-columns:100px 80px;
+    grid-template-rows:80px 30px;
+
+}
+
+.icon-container{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.current-temp{
+    text-align: center;
+    font-size: 30px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.min-max-temp{
+    text-align: center;
+    font-size: 13px;
+    margin-top: -14px;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}

@@ -1,12 +1,11 @@
 .main-showcase {
-    display: flex;
-    border-color: black;
     border: 1px;
-    width: 600px;
-    height: 200px;
-    flex-direction: column;
+    height: 100%;
     border: tomato;
     border-style: double;
-    margin-top: 50px;
     padding: 10px;
+
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows:3fr 1fr;
 }

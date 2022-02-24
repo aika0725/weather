@@ -1,22 +1,23 @@
 import React, { useState } from "react";
-
-import Header from "../header/header.component";
-import WeatherShowcase from "../weather-showcase/weather-showcase.component";
+import WeatherShowcase from "../today-weather-showcase/today-weather-showcase.component";
+import Forecast from "../forecast/forecast.component";
+import Activities from "../something-cool/activites.component";
 
 import './main-showcase.css'
 
 
 const Showcase = () =>{
-    const [city, setCity] = useState('Oslo')
+    const [location, setLocation] = useState('Oslo')
 
     return(
     <div className="main-showcase">
-        <Header
-            setCity={setCity}
-        />
+
         <WeatherShowcase 
-            cityName = {city}
+            location = {location}
         />
+
+        <Forecast/>
+        <Activities/>
     </div>
 )}
 
