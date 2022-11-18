@@ -11,6 +11,7 @@ const Header = (props) =>{
         <Title/>
         <SearchBar
             placeholder='City name...'
+            setSearchText = {props.setSearchText}
         />
     </div>
 )}

@@ -2,7 +2,7 @@
     display: grid;
     margin-right: 16px; 
 
-    grid-template-columns:100px 80px;
+    grid-template-columns:100px 120px;
     grid-template-rows:80px 30px;
 
 }

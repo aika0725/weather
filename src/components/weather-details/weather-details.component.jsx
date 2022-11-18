@@ -6,10 +6,10 @@ const WeatherDetails = (props) =>{
 
     return(
         <div className="weather-details">
-            <span className="description">weather.description</span>
-            <span className="wind-speed">Wind speed</span>
-            <span className="cloudiness">Cloudiness</span>
-            <span className="humidity">humidity</span>
+            <span className="description">{props.description}</span>
+            <span className="wind-speed">Wind speed: {props.wind}m/sec</span>
+            <span className="cloudiness">Cloudiness: {props.cloudiness}%</span>
+            <span className="humidity">humidity: {props.humidity}%</span>
         </div>
     )
 }

@@ -3,11 +3,11 @@ import React from "react";
 const SearchBar = (props) => {
 
 
-    // const search = (e) => {
-    //     if (e.key === 'Enter') {
-    //         props.setLocation(e.target.value)
-    //     }
-    // }
+     const search = (e) => {
+         if (e.key === 'Enter') {
+             props.setSearchText(e.target.value)
+         }
+     }
 
     return (
         <div className="search">
@@ -15,7 +15,7 @@ const SearchBar = (props) => {
                 className="searchBar"
                 type="search"
                  placeholder={props.placeholder}
-                // onKeyDown={search}
+                 onKeyDown={search}
             />
         </div>
     )
